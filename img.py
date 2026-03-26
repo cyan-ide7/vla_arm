@@ -9,7 +9,7 @@ client = RemoteAPIClient()
 sim = client.getObject('sim')
 
 sim.startSimulation()
-camera = sim.getObject('/NiryoOne/camera')
+camera = sim.getObject('/NiryoOne/camera_top')
 
 # List to store our recorded positions: (time_step, x, y)
 pos_log = []
@@ -42,7 +42,7 @@ try:
         contours, _ = cv2.findContours(mask, cv2.RETR_TREE, cv2.CHAIN_APPROX_SIMPLE)
         
         for cnt in contours:
-            if cv2.contourArea(cnt) > 25:
+            if cv2.contourArea(cnt) > 10:
                 x, y, w, h = cv2.boundingRect(cnt)
                 cx, cy = x + w//2, y + h//2
                 
