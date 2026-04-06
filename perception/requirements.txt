@@ -1,0 +1,6 @@
+opencv-python-headless
+numpy
+fastapi
+uvicorn
+coppeliasim-zmqremoteapi-client
+pillow
