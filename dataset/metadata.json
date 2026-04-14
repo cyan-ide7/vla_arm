@@ -1,0 +1,50 @@
+[
+    {
+        "step_id": 0,
+        "instruction": "Pick and place the object to the left.",
+        "top_image": "top_images/000000.png",
+        "wrist_image": "wrist_images/000000.png",
+        "state_file": "states/000000.npy",
+        "action_file": "actions/000000.npy"
+    },
+    {
+        "step_id": 1,
+        "instruction": "Pick and place the object to the left.",
+        "top_image": "top_images/000001.png",
+        "wrist_image": "wrist_images/000001.png",
+        "state_file": "states/000001.npy",
+        "action_file": "actions/000001.npy"
+    },
+    {
+        "step_id": 2,
+        "instruction": "Pick and place the object to the left.",
+        "top_image": "top_images/000002.png",
+        "wrist_image": "wrist_images/000002.png",
+        "state_file": "states/000002.npy",
+        "action_file": "actions/000002.npy"
+    },
+    {
+        "step_id": 3,
+        "instruction": "Pick and place the object to the left.",
+        "top_image": "top_images/000003.png",
+        "wrist_image": "wrist_images/000003.png",
+        "state_file": "states/000003.npy",
+        "action_file": "actions/000003.npy"
+    },
+    {
+        "step_id": 4,
+        "instruction": "Pick and place the object to the left.",
+        "top_image": "top_images/000004.png",
+        "wrist_image": "wrist_images/000004.png",
+        "state_file": "states/000004.npy",
+        "action_file": "actions/000004.npy"
+    },
+    {
+        "step_id": 5,
+        "instruction": "Pick and place the object to the left.",
+        "top_image": "top_images/000005.png",
+        "wrist_image": "wrist_images/000005.png",
+        "state_file": "states/000005.npy",
+        "action_file": "actions/000005.npy"
+    }
+]
