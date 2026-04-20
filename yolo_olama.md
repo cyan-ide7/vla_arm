@@ -2,7 +2,7 @@
 
 This project implements a **Vision-Language-Action (VLA)** control system for the Niryo robotic arm in CoppeliaSim. It utilizes a hybrid architecture that combines local Large Language Models (**Ollama/Llama 3**), real-time object detection (**YOLOv8**), and **CNN-based Behavioral Cloning** for autonomous pick-and-place tasks.
 
-## 🚀 System Architecture
+##  System Architecture
 
 The system operates through a decoupled multi-layer pipeline:
 1.  **Language Layer**: Uses **Ollama (Llama 3)** to parse natural language instructions into structured goals.
@@ -10,7 +10,7 @@ The system operates through a decoupled multi-layer pipeline:
 3.  **Action Layer**: A **CNN-based (ResNet-18)** Behavioral Cloning network predicts smooth trajectories based on visual feedback and current robot state.
 4.  **Execution Layer**: CoppeliaSim's **Inverse Kinematics (IK)** solver translates predicted poses into physical joint commands.
 
-## 🛠️ Prerequisites
+##  Prerequisites
 
 Before installation, ensure you have the following:
 * **Operating System**: Windows 10/11 or Ubuntu Linux.
@@ -21,7 +21,7 @@ Before installation, ensure you have the following:
     ```
 * **Python**: Version 3.8 or higher.
 
-## 📥 Installation
+##  Installation
 
 1.  **Clone the Repository**:
     ```bash
@@ -44,7 +44,7 @@ Before installation, ensure you have the following:
     pip install ultralytics opencv-python numpy tqdm coppeliasim-zmqremoteapi_client requests
     ```
 
-## 🎮 How to Run
+##  How to Run
 
 ### 1. Setup Simulation
 * Open **CoppeliaSim**.
@@ -65,7 +65,7 @@ Run the scripts in the following order:
     ```
     *When prompted, enter a command like: "place the red cube on the white circle".*
 
-## 📁 Project Structure
+##  Project Structure
 
 * `vla_interface.py`: The live inference loop connecting Ollama, YOLO, and the BC network.
 * `vla_model.py`: NiryoVLA neural network definition (CNN + Fusion MLP).
@@ -73,10 +73,6 @@ Run the scripts in the following order:
 * `action_config.py`: Defines workspace bounds and normalization parameters.
 * `train_vla.py`: Training script for behavioral cloning.
 
-## ⚠️ Common Troubleshooting
-* **Connection Refused**: Ensure the ZMQ Remote API is enabled in CoppeliaSim and the simulation is active.
-* **Ollama Timeout**: Ensure the Ollama service is running in the background before starting the interface.
-* **Reach Error**: If the arm does not touch the object, adjust `Z_PICK_HEIGHT` in the control script.
 
 ---
-**Admin/Contributor**: mars.ciot@pes.edu
+
