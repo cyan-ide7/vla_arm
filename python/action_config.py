@@ -78,7 +78,7 @@ ACTION_DESCRIPTION = {
     "0": "End-effector X position (meters)",
     "1": "End-effector Y position (meters)",
     "2": "End-effector Z position (meters)",
-    "3": "End-effector Pitch (radians)",   # ✅ FIXED
+    "3": "End-effector Pitch (radians)",   #  FIXED
     "4": "End-effector Yaw (radians)",
     "5": "Gripper state (0=open, 1=closed)",
 }

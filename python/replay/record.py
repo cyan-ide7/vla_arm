@@ -33,7 +33,7 @@ os.makedirs(wrist_dir, exist_ok=True)
 with open(os.path.join(traj_dir, "instruction.txt"), "w") as f:
     f.write(instruction)
 
-print(f"📁 Recording trajectory: {traj_name}")
+print(f" Recording trajectory: {traj_name}")
 
 # --------------------------------------------------
 # CONNECT TO COPPELIASIM
