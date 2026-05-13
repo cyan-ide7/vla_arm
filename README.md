@@ -127,7 +127,7 @@ vla_arm/
     ├── vla_model.py         # VLA model architecture
     ├── action_config.py     # Action space configuration
     ├── image_ob.py          # Image observation utilities
-    └── 6d.py                # 6D pose utilities
+  s
 ```
 
 ## Configuration
@@ -139,20 +139,4 @@ Key parameters can be adjusted in the respective scripts:
 - **Training Hyperparameters**: Change batch size, epochs, learning rate in `train_vla.py`
 - **Control Frequency**: Adjust `CONTROL_FREQUENCY` in `vla_interface.py`
 
-## Troubleshooting
 
-- **CoppeliaSim Connection Issues**: Ensure the simulation is running and ZMQ Remote API is enabled
-- **CUDA Out of Memory**: Reduce batch size in training script
-- **Import Errors**: Verify all dependencies are installed in the virtual environment
-- **Model Loading Failures**: Check that the model file exists at the expected path
-
-## Contributing
-
-1. Record additional demonstrations for diverse tasks
-2. Experiment with different model architectures
-3. Improve preprocessing or data augmentation techniques
-4. Add evaluation metrics and benchmarking
-
-## License
-
-This project is for educational and research purposes.
